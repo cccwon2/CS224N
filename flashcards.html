@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS224n Flashcards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background-color: #121212;
+            --card-background: rgba(38, 38, 38, 0.8);
+            --text-color: #EAEAEA;
+            --header-color: #FFFFFF;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --hover-background: rgba(50, 50, 50, 0.9);
+        }
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--header-color);
+            letter-spacing: 1px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, background 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            background: var(--hover-background);
+        }
+        .card a {
+            text-decoration: none;
+            color: var(--text-color);
+            display: block;
+            padding: 2rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+            height: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CS224n Lecture Flashcards</h1>
+        </header>
+        <main class="card-grid">
+            <div class="card"><a href="https://notebooklm.google.com/notebook/23162a68-94e3-4987-8ef2-f4fe90b9bd5a?artifactId=9430fb3a-5441-4e60-b7df-279f22572fb4" target="_blank" rel="noopener noreferrer">CS224N Lecture01: Word Vectors</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/b44dce4d-151e-4589-9a4f-adee498ed8df?artifactId=1405b23d-aebc-4456-930a-d81005753126" target="_blank" rel="noopener noreferrer">CS224N Lecture02: Word Vectors and Language Models</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/70eaac7f-a50b-42d1-8378-48835a77b291?artifactId=f4348053-3005-48e9-8df3-0478152da3f0" target="_blank" rel="noopener noreferrer">CS224N Lecture03: Backpropagation and Neural Network Gradients</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/521ed61d-848e-4ff4-9137-d55f73329300?artifactId=78ba9670-c9d4-45ce-ad4d-986b500cb24b" target="_blank" rel="noopener noreferrer">CS224N Lecture04: Dependency Parsing: Constituency and Graph Approaches</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/0b6f5c86-f12f-477f-a7b7-5018bd7f9b6b?artifactId=0a1d35c4-b9ef-4b25-9b6d-f42f77e3c23a" target="_blank" rel="noopener noreferrer">CS224N Lecture05: Recurrent Neural Networks</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/6b64be77-713a-4199-9ae0-6aa89da18d96?artifactId=8ac32c50-3b8e-410c-adbf-0847af7e0b88" target="_blank" rel="noopener noreferrer">CS224N Lecture06: Sequence to Sequence Models</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/e3c66578-3934-4388-ae7f-f9d0106bffce?artifactId=9671fe17-7791-452b-b688-f21748074081" target="_blank" rel="noopener noreferrer">CS224N Lecture07: Attention, Final Projects and LLM Intro</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/50340695-6a6f-4e8f-806e-b3e26d5ea0a0?artifactId=71aac49e-61aa-4a18-8c40-0545b4d106a2" target="_blank" rel="noopener noreferrer">CS224N Lecture08: Transformers</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/a739fb8b-dc39-410d-99fe-77271be7af57?artifactId=077a701d-82c1-427d-a36f-ac57e34fab2a" target="_blank" rel="noopener noreferrer">CS224N Lecture09: Pre-training</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/95bc9a2e-9178-405d-8c03-e6ac61eafd19?artifactId=a222dce0-2291-41ab-9cdd-a18570a1c440" target="_blank" rel="noopener noreferrer">CS224N Lecture10: Post-training</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/e4ec3dad-3f59-4973-b115-d306fb069ec4?artifactId=fd096717-ba21-4b40-8eac-0f28e7826e1d" target="_blank" rel="noopener noreferrer">CS224N Lecture11: Benchmarking and Evaluation</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/71a45f12-f4d3-4cdb-8834-0e2b8a2a8978?artifactId=c0c74c91-83d1-4b89-b0cc-c19684a359c0" target="_blank" rel="noopener noreferrer">CS224N Lecture12: Efficient Neural Network Training</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/6b2dbeaf-6dba-471f-9f77-df1af7c1f642?artifactId=d4929631-a8a8-4ebb-97ac-04b482f00181" target="_blank" rel="noopener noreferrer">CS224N Lecture13: Speech Brain-Computer Interface</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/8bf3383b-ff30-4636-a66b-3ce136fa8550?artifactId=31ea9087-1276-44da-b870-7d66c47c8707" target="_blank" rel="noopener noreferrer">CS224N Lecture14: Reasoning and Agents</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/02cc26ac-817b-452e-9cbd-75c771d8ed87?artifactId=3d7c45fc-0173-4e2c-8084-8b99c3c410c6" target="_blank" rel="noopener noreferrer">CS224N Lecture15: Life After DPO</a></div>
+            <div class="card"><a href="https://notebooklm.google.com/notebook/485c7bdb-135d-4eb7-b901-673b62f3aaef?artifactId=6f79c17f-f559-42ce-923a-9d9c8afa49eb" target="_blank" rel="noopener noreferrer">CS224N Lecture16: ConvNets, Tree Recursive Neural Networks and Constituency Parsing</a></div>
+        </main>
+    </div>
+</body>
+</html>
